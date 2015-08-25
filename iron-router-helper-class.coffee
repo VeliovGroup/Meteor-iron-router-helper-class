@@ -4,9 +4,15 @@ class IronRouterHelper
     @currentController ?= {}
 
     self = @
-    @router.onAfterAction ->
+    @router.onRun ->
       self.currentRoute = @
       self.getController()
+      @next()
+
+    @router.onBeforeAction ->
+      self.currentRoute = @
+      self.getController()
+      @next()
 
   getController: ->
     @currentController = switch
