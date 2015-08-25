@@ -3,6 +3,7 @@ Package.describe({
   version: '1.0.0',
   summary: 'Helper class for other iron-router\'s packages by ostrio',
   git: 'https://github.com/VeliovGroup/Meteor-iron-router-helper-class',
+  documentation: 'README.md'
 });
 
 Package.onUse(function(api) {
