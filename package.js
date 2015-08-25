@@ -1,7 +1,7 @@
 Package.describe({
   name: 'ostrio:iron-router-helper-class',
   version: '1.0.0',
-  summary: 'Helper class for other packages by ostrio',
+  summary: 'Helper class for other iron-router\'s packages by ostrio',
   git: 'https://github.com/VeliovGroup/Meteor-iron-router-helper-class',
 });
 
