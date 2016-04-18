@@ -16,6 +16,6 @@ class IronRouterHelper
 
   getController: ->
     @currentController = switch
-      when @currentRoute.route.findControllerConstructor then @currentRoute.route.findControllerConstructor()
-      when @currentRoute.route.findController then @currentRoute.route.findController()
+      when @currentRoute?.route?.findControllerConstructor then @currentRoute.route.findControllerConstructor?()
+      when @currentRoute?.route?.findController then @currentRoute.route.findController?()
       else null
